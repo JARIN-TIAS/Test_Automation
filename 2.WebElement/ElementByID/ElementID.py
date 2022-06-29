@@ -16,5 +16,6 @@ class ElemetId():
         else:
             print('We did not find username by ID')
         print('this worked properly')
+        driver.close()
 test_obj = ElemetId()
 test_obj.element_locator()
