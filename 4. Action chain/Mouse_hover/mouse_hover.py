@@ -24,16 +24,17 @@ class Mouse_hovering():
         login.click()
         time.sleep(2.5)
 
-        #project_info menu
-        project_info = driver.find_element(By.XPATH,'//*[@id="menu_admin_ProjectInfo"]/b')
+        #reqruitment_menu
+        reqruittment= driver.find_element(By.XPATH,'//*[@id="menu_recruitment_viewRecruitmentModule"]/b')
         #to keep mouse (cant click)
         actions = ActionChains(driver)
-        actions.move_to_element(project_info).perform
+        actions.move_to_element(reqruittment).perform()
         time.sleep(2)
 
-        customers=driver.find_element(By.LINK_TEXT,'Customers')
-        customers.click()
-        time.sleep(2)
+        candidate= driver.find_element(By.LINK_TEXT,'Candidates')
+        candidate.click()
+        time.sleep(2.5)
+
 
 test_obj= Mouse_hovering()
 test_obj.mouseHover_demo()
