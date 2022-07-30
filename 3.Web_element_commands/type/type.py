@@ -9,8 +9,11 @@ class Type():
 
     def type_text(self):
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+        print ('browser lunch success')
         driver.maximize_window()
         driver.get('https://opensource-demo.orangehrmlive.com/index.php/pim/viewPersonalDetails/empNumber/7')
+        print('URL open success')
+
         #username
         username = driver.find_element(By.ID, 'txtUsername')
         #password
@@ -22,6 +25,9 @@ class Type():
         password.send_keys('admin123')
         login.click()
         time.sleep(3.5)
+
+        driver.close()
+        print('test completed.browser closed')
 
 test_obj = Type()
 test_obj.type_text()
