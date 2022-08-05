@@ -9,7 +9,7 @@ import time
 from framework.pages.login_page import Login_page
 
 
-class LoginTest (unittest.TestCaseTestCase):
+class LoginTest (unittest.TestCase):
 
     def test_valid_login(self):
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
