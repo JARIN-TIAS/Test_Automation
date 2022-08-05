@@ -34,7 +34,7 @@ def browser_config():
     driver.close()
     print('test completed. browser closed')
 
-def recruitement_button (browser_config):
+def test_recruitement_button (browser_config):
 
      # reqruitment_menu
      reqruitement = driver.find_element(By.XPATH, '//*[@id="menu_recruitment_viewRecruitmentModule"]/b')
@@ -47,7 +47,7 @@ def recruitement_button (browser_config):
      candidate.click()
      time.sleep(2.5)
 
-def performance_button (browser_config):
+def test_performance_button (browser_config):
      # perfrormnace
      performance = driver.find_element(By.XPATH, '//*[@id="menu__Performance"]')
      # to keep mouse (cant click)
