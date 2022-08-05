@@ -10,7 +10,7 @@ class ElemetId():
         driver.maximize_window()
         driver.get('https://opensource-demo.orangehrmlive.com/index.php/pim/viewPersonalDetails/empNumber/7')
         #username
-        username=driver.find_element(By.ID, 'frmLogin')
+        username= driver.find_element(By.ID, 'frmLogin')
         if username is not None:
             print ('We found usename by ID')
         else:

@@ -9,6 +9,7 @@ import time
 
 def browser_config():
     global driver
+
     driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     print('browser lunch success')
     driver.maximize_window()
@@ -31,6 +32,7 @@ def test_login_valid (browser_config):
     password.send_keys('admin123')
     login.click()
     time.sleep(3.5)
+
 def test_login_invalid (browser_config):
     # username
     username = driver.find_element(By.ID, 'txtUsername')
