@@ -29,7 +29,7 @@ def test_Samsung (browser_config):
     Samsung = driver.find_element(By.XPATH, '//*[@id="body"]/aside/div[1]/ul/li[1]/a')
     # to keep mouse (cant click)
     actions = ActionChains(driver)
-    actions.move_to_element(Samsung).perform().click()
+    actions.move_to_element(Samsung).perform()
     time.sleep(2)
 
 
