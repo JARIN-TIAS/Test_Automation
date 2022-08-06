@@ -12,6 +12,7 @@ class Scroll_demo():
         driver.get('https://apple.com')
         print('test URL done')
         driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
+        print('test completed successfully')
 
         time.sleep(5)
         driver.close()
