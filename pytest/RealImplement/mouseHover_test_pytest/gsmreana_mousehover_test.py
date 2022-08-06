@@ -30,6 +30,8 @@ def test_Samsung (browser_config):
     # to keep mouse (cant click)
     actions = ActionChains(driver)
     actions.move_to_element(Samsung).perform()
+    Samsung.click()
+
     time.sleep(2)
 
 
