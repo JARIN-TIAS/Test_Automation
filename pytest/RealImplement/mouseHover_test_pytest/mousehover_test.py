@@ -21,7 +21,7 @@ def browser_config():
     # username
     username = driver.find_element(By.ID, 'txtUsername')
     # password
-    password = driver.find_element(By.CSS_SELECTOR, '#txtPassword')
+    password = driver.find_element(By.ID, 'txtPassword')
     # login
     login = driver.find_element(By.ID, 'btnLogin')
 
