@@ -41,4 +41,4 @@ def test_Apple (browser_config):
     Apple.click()
     time.sleep(2)
 
-    driver.close()
+

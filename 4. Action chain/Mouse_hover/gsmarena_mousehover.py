@@ -28,7 +28,7 @@ class gsmreana_hovering():
         time.sleep(2)
 
         driver.close()
-
+        print('test completed')
 
 test_obj= gsmreana_hovering()
 test_obj.gsmarena_demo()
